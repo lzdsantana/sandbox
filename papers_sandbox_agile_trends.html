@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox Papers: Da Hipótese à Escala</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%); }
+        .section-divider { border-top: 3px solid #f59e0b; }
+        .hover-lift { transition: transform 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-2px); }
+        .static-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-900 shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://i.postimg.cc/k5t9Lgys/IMG-1039.png" alt="Sandbox CAIXA Logo" class="h-8 w-auto">
+                <div>
+                    <h1 class="text-2xl font-bold text-white">Sandbox Papers</h1>
+                    <p class="text-sm text-blue-200">Revista Eletrônica do Sandbox CAIXA</p>
+                </div>
+            </div>
+            <div class="text-right">
+                <img src="https://storage.googleapis.com/idea-wp/apcapdobem/2022/10/6c4ea3d6-caixa_2cores_negativa.png" alt="CAIXA Logo" class="h-8 w-auto mb-2">
+                <p class="text-sm font-semibold text-white">Edição 01 – Agosto 2025</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Orange Divider -->
+    <div class="border-t-3 border-yellow-500"></div>
+
+    <!-- Hero Section / Capa -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Sandbox CAIXA</h1>
+            <h2 class="text-3xl md:text-4xl font-light mb-8">Da Hipótese à Escala</h2>
+            <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                Primeira edição da revista eletrônica que documenta os experimentos, 
+                aprendizados e inovações do Sandbox CAIXA
+            </p>
+        </div>
+    </section>
+
+    <!-- Navigation Menu -->
+    <nav class="bg-white border-b-2 border-yellow-500 sticky top-20 z-40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center space-x-8 py-4 text-sm font-medium">
+                <a href="#editorial" class="text-blue-900 hover:text-yellow-600 transition-colors">Editorial</a>
+                <a href="#visao-geral" class="text-blue-900 hover:text-yellow-600 transition-colors">Visão Geral</a>
+                <a href="#historico" class="text-blue-900 hover:text-yellow-600 transition-colors">Histórico</a>
+                <a href="#estrategia" class="text-blue-900 hover:text-yellow-600 transition-colors">Estratégia 2025</a>
+                <a href="#experimentos" class="text-blue-900 hover:text-yellow-600 transition-colors">Experimentos</a>
+                <a href="#parcerias" class="text-blue-900 hover:text-yellow-600 transition-colors">Parcerias</a>
+                <a href="#eventos" class="text-blue-900 hover:text-yellow-600 transition-colors">Eventos</a>
+                <a href="#premios" class="text-blue-900 hover:text-yellow-600 transition-colors">Prêmios</a>
+                <a href="#proximos-passos" class="text-blue-900 hover:text-yellow-600 transition-colors">Próximos Passos</a>
+                <a href="#creditos" class="text-blue-900 hover:text-yellow-600 transition-colors">Créditos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        
+        <!-- Editorial Section -->
+        <section id="editorial" class="mb-20">
+            <h2 class="text-4xl font-bold text-blue-900 mb-8 text-center">Editorial</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-8 hover-lift">
+                <div class="flex flex-col md:flex-row items-start space-y-6 md:space-y-0 md:space-x-8">
+                    <div class="flex-shrink-0">
+                        <img src="https://i.postimg.cc/c4SkZb4S/IMG-1037.jpg" alt="Lucas Zaccaro Dias Santana" 
+                             class="w-32 h-32 rounded-full object-cover border-4 border-yellow-500">
+                        <p class="text-left mt-3 font-semibold text-blue-900">Lucas Zaccaro Dias Santana</p>
+                        <p class="text-left text-sm text-gray-600">Gestor do Sandbox CAIXA</p>
+                        <p class="text-left text-xs text-gray-500">Gerência Nacional de Inovação</p>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-semibold text-blue-900 mb-4">Mensagem do Gestor</h3>
+                        <div class="prose prose-lg text-gray-700 space-y-4">
+                            <p>É com grande entusiasmo que apresentamos a primeira edição do Sandbox Papers, a revista da CAIXA dedicada a documentar, analisar e compartilhar os resultados dos experimentos de inovação realizados no âmbito do Sandbox CAIXA.</p>
+                            
+                            <p>Mais do que uma publicação técnica, esta edição inaugura um espaço de reflexão estratégica sobre como a experimentação pode transformar serviços financeiros, processos internos e a relação da CAIXA com a sociedade. O Sandbox Papers nasce do compromisso com a inovação responsável, a transparência institucional e o fortalecimento do ecossistema público de inovação.</p>
+                            
+                            <h4 class="text-xl font-semibold text-blue-900 mt-6 mb-3">O que é o Sandbox Papers</h4>
+                            <p>O Sandbox Papers é uma publicação científica institucional que tem como missão registrar com rigor e clareza os aprendizados gerados pelos ciclos de experimentação da CAIXA. Ele reúne evidências, metodologias, resultados e reflexões que emergem dos testes realizados em ambiente controlado, com foco em inovação aplicada e impacto social. É um instrumento de memória, prestação de contas e disseminação de conhecimento.</p>
+                            
+                            <h4 class="text-xl font-semibold text-blue-900 mt-6 mb-3">O que esta edição apresenta</h4>
+                            <p>Esta primeira edição abrange o período de agosto de 2024 a julho de 2025, e documenta 24 experimentos realizados no âmbito do Sandbox CAIXA. Os projetos aqui apresentados abordam temas como inclusão financeira, automação de processos, novos modelos de crédito, digitalização de serviços e eficiência operacional. Cada experimento foi conduzido por equipes multidisciplinares, com apoio metodológico da GEINA e validação junto a usuários reais.</p>
+                            
+                            <p>Além dos resultados técnicos, esta edição traz também os bastidores da construção dos projetos, os desafios enfrentados, os aprendizados obtidos e os caminhos abertos para futuras escalas. Os experimentos foram desenvolvidos por áreas diversas da CAIXA, com participação ativa de empregados, parceiros e lideranças, refletindo o potencial transformador da inovação colaborativa.</p>
+                            
+                            <h4 class="text-xl font-semibold text-blue-900 mt-6 mb-3">Objetivos desta Publicação</h4>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li><strong>Transparência Científica:</strong> Documentar de forma rigorosa e transparente todos os experimentos realizados, incluindo sucessos, falhas e aprendizados.</li>
+                                <li><strong>Compartilhamento de Conhecimento:</strong> Disponibilizar metodologias, ferramentas e insights para o ecossistema de inovação brasileiro.</li>
+                                <li><strong>Prestação de Contas:</strong> Demonstrar à sociedade como os recursos públicos estão sendo aplicados em inovação com impacto social.</li>
+                                <li><strong>Fomento à Colaboração:</strong> Inspirar e facilitar parcerias entre instituições públicas, privadas e startups.</li>
+                                <li><strong>Contribuição Acadêmica:</strong> Enriquecer a literatura científica sobre inovação em serviços financeiros no contexto brasileiro.</li>
+                            </ul>
+                            
+                            <h4 class="text-xl font-semibold text-blue-900 mt-6 mb-3">A jornada de construção do Sandbox CAIXA</h4>
+                            <p>A trajetória até o lançamento do Sandbox CAIXA envolveu um processo cuidadoso de estruturação metodológica, alinhamento estratégico e mobilização institucional. A iniciativa foi liderada pela Gerência Nacional de Inovação (GEINA), com apoio do CoE Inovação da TEIA, e aprovada pelo Conselho Diretor em 2024. A publicação do normativo OR219 e o lançamento do primeiro edital de chamada de experimentação marcaram o início oficial do modelo, que rapidamente se expandiu com a adesão de todas as vice-presidências da CAIXA e a participação ativa de centenas de empregados em ciclos de teste e validação.</p>
+                            
+                            <h4 class="text-xl font-semibold text-blue-900 mt-6 mb-3">Aspiração e objetivos do Sandbox CAIXA</h4>
+                            <p>O Sandbox CAIXA foi concebido como um ambiente seguro, controlado e estratégico para fomentar a experimentação dentro da CAIXA. Sua aspiração é permitir que ideias inovadoras sejam testadas com agilidade e responsabilidade, promovendo soluções que atendam às necessidades reais da sociedade brasileira. O modelo busca democratizar o acesso à inovação, estimular a criatividade dos empregados e acelerar a transformação dos serviços financeiros, sempre com foco na inclusão, eficiência e impacto social.</p>
+                            
+                            <h4 class="text-xl font-semibold text-blue-900 mt-6 mb-3">Conquistas e resultados já alcançados</h4>
+                            <p>Desde sua implementação, o Sandbox CAIXA já viabilizou a aceleração de dezenas de projetos, incluindo iniciativas premiadas como o Limite de Cartão de Crédito igual Open Finance, o Parametrizador Fiscal e o CAIXA Connect Comex, reconhecidos no Sandbox Summit 2025 por sua relevância e impacto direto na experiência dos clientes. Além disso, o modelo contribuiu para a formalização de parcerias com startups, a inauguração do Espaço TEIA como hub de inovação, e a consolidação de uma cultura interna que valoriza o risco calculado e a aprendizagem contínua.</p>
+                            
+                            <h4 class="text-xl font-semibold text-blue-900 mt-6 mb-3">Encerramento</h4>
+                            <p>O Sandbox Papers é mais do que um registro técnico — é um convite à reflexão, à colaboração e à construção coletiva de um futuro mais inovador, inclusivo e eficiente. Ao compartilhar de forma aberta os aprendizados, desafios e conquistas do Sandbox CAIXA, reafirmamos nosso compromisso com a transformação pública baseada em evidências, com o protagonismo dos nossos empregados e com a geração de valor para a sociedade brasileira. Que esta edição inspire novas ideias, fortaleça conexões e amplifique o impacto da inovação em rede. Boa leitura!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visão Geral Section -->
+        <section id="visao-geral" class="mb-20">
+            <div class="section-divider mb-12"></div>
+            <h2 class="text-4xl font-bold text-blue-900 mb-8 text-center">Visão Geral do Sandbox CAIXA</h2>
+            
+            <div class="space-y-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 hover-lift">
+                    <h3 class="text-xl font-semibold text-blue-900 mb-4">O que é o Sandbox CAIXA</h3>
+                    <p class="text-gray-700 mb-4">O Sandbox CAIXA é um modelo institucional de experimentação criado em 2024 para viabilizar testes de soluções inovadoras com segurança, agilidade e governança. Estruturado para apoiar a transformação digital da CAIXA, o modelo permite que ideias, produtos, serviços, processos e modelos de negócio sejam testados em ambiente controlado, com tolerância ao erro e foco na geração de valor para clientes, empregados e sociedade.</p>
+                    
+                    <h4 class="font-semibold text-blue-800 mb-4">Características Fundamentais:</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Ambiente Controlado e Seguro</h5>
+                                <p class="text-xs text-gray-600">Os testes são realizados com usuários reais, em escala limitada, com salvaguardas específicas para proteção de dados, mitigação de riscos e preservação da imagem institucional.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Flexibilidade Regulatória e Normativa</h5>
+                                <p class="text-xs text-gray-600">O modelo permite a flexibilização temporária de normas internas e externas, mediante autorização formal, viabilizando a experimentação de soluções que ainda não se enquadram nos marcos regulatórios vigentes.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Governança e Responsabilidade</h5>
+                                <p class="text-xs text-gray-600">Cada experimento é conduzido por um experimentador (intraempreendedor ou unidade gestora), com responsabilidades claras quanto à estruturação, execução, monitoramento e prestação de contas dos resultados e riscos envolvidos.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="flex-shrink-0 w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Ciclos Ágeis de Experimentação</h5>
+                                <p class="text-xs text-gray-600">O fluxo é dividido em três fases — Discovery, Delivery e Scale — com prazos estimados, entregáveis definidos e limites de perda previamente estabelecidos. A lógica é testar com velocidade, aprender com os erros e ajustar antes de escalar.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="flex-shrink-0 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Centralidade no Cliente</h5>
+                                <p class="text-xs text-gray-600">Todo experimento deve gerar valor ao cliente, interno ou externo, sendo orientado por métricas de satisfação, feedbacks reais e princípios de atendimento humanizado e multicanal.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="flex-shrink-0 w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Integração ao Ecossistema de Inovação</h5>
+                                <p class="text-xs text-gray-600">O Sandbox CAIXA se articula com outras iniciativas como chamadas de startups, squads de inovação, hubs como o Espaço TEIA, e programas de inovação aberta, compondo o Funil de Inovação da CAIXA.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="flex-shrink-0 w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Tolerância ao Risco e Aprendizado Contínuo</h5>
+                                <p class="text-xs text-gray-600">A experimentação é reconhecida como instrumento legítimo de aprendizado. O erro inteligente é aceito como parte do processo, desde que dentro dos limites definidos e com registro adequado.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="flex-shrink-0 w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 text-sm">Capacitação e Suporte Metodológico</h5>
+                                <p class="text-xs text-gray-600">A GEINA, como coordenadora do modelo, oferece trilhas de aprendizagem, materiais de apoio, consultorias e orientações para garantir a efetividade e segurança dos testes realizados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 hover-lift">
+                    <h3 class="text-xl font-semibold text-blue-900 mb-4">Metodologia de Experimentação</h3>
+                    <p class="text-gray-700 mb-4">A Metodologia de Experimentação do Sandbox CAIXA é composta por três fases principais — Discovery, Delivery e Scale — que orientam a jornada de transformação de ideias em soluções validadas. Cada etapa possui objetivos específicos e entregas estruturadas, promovendo agilidade, segurança e impacto mensurável na inovação.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h4 class="font-semibold text-blue-800 mb-2">🔍 Discovery — Entendimento e Planejamento</h4>
+                            <p class="text-sm text-gray-600 mb-2"><strong>Objetivo:</strong> Compreender profundamente o desafio a ser enfrentado, alinhar expectativas e estabelecer as bases para uma experimentação eficaz.</p>
+                            <ul class="text-xs text-gray-500 list-disc list-inside space-y-1">
+                                <li>Identificação do problema</li>
+                                <li>Formulação de hipóteses</li>
+                                <li>Critérios de sucesso</li>
+                                <li>Registro estruturado</li>
+                                <li>Alinhamento estratégico</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <h4 class="font-semibold text-green-800 mb-2">⚙️ Delivery — Construção e Testes</h4>
+                            <p class="text-sm text-gray-600 mb-2"><strong>Objetivo:</strong> Desenvolver uma solução inicial funcional, testá-la com usuários reais e promover melhorias contínuas com base em evidências.</p>
+                            <ul class="text-xs text-gray-500 list-disc list-inside space-y-1">
+                                <li>Desenvolvimento do MVP</li>
+                                <li>Testes com usuários reais</li>
+                                <li>Coleta de feedbacks</li>
+                                <li>Ajustes iterativos</li>
+                                <li>Monitoramento de riscos</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="border-l-4 border-purple-500 pl-4">
+                            <h4 class="font-semibold text-purple-800 mb-2">📈 Scale — Avaliação e Decisão</h4>
+                            <p class="text-sm text-gray-600 mb-2"><strong>Objetivo:</strong> Analisar os resultados da experimentação, decidir sobre a continuidade ou encerramento da iniciativa e consolidar os aprendizados para uso futuro.</p>
+                            <ul class="text-xs text-gray-500 list-disc list-inside space-y-1">
+                                <li>Avaliação dos resultados</li>
+                                <li>Decisão sobre escalabilidade</li>
+                                <li>Registro dos aprendizados</li>
+                                <li>Compartilhamento dos impactos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Histórico Section -->
+        <section id="historico" class="mb-20">
+            <div class="section-divider mb-12"></div>
+            <h2 class="text-4xl font-bold text-blue-900 mb-8 text-center">Histórico e Evolução do Sandbox CAIXA</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-8 hover-lift">
+                <div class="space-y-6">
+                    <div class="border-l-4 border-yellow-500 pl-6">
+                        <h4 class="font-semibold text-blue-900 mb-2">Junho 2024 - Criação do Sandbox CAIXA e sua governança</h4>
+                        <p class="text-gray-700">Formalização da proposta institucional do Sandbox como ferramenta de experimentação estruturada.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-yellow-500 pl-6">
+                        <h4 class="font-semibold text-blue-900 mb-2">Agosto 2024 - Lançamento do 1º Edital do Sandbox CAIXA</h4>
+                        <p class="text-gray-700">Início oficial do ciclo de experimentos com edital para submissão de propostas.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-yellow-500 pl-6">
+                        <h4 class="font-semibold text-blue-900 mb-2">Outubro 2024 - Início dos primeiros experimentos</h4>
+                        <p class="text-gray-700">Execução dos primeiros testes em ambiente controlado, com apoio da GEINA.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-yellow-500 pl-6">
+                        <h4 class="font-semibold text-blue-900 mb-2">Janeiro 2025 - Lançamento do Sandbox REDE</h4>
+                        <p class="text-gray-700">Convocação para experimentação para os empregados de Agências da Rede de Varejo de todo o Brasil.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-yellow-500 pl-6">
+                        <h4 class="font-semibold text-blue-900 mb-2">Fevereiro 2025 - Encerramento do Ciclo 2024 e Sandbox Summit 2025</h4>
+                        <p class="text-gray-700">Apresentação dos resultados dos experimentos e realização do evento institucional de celebração e compartilhamento de aprendizados.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-yellow-500 pl-6">
+                        <h4 class="font-semibold text-blue-900 mb-2">Agosto 2025 - Lançamento do Sandbox CAIXA Always On</h4>
+                        <p class="text-gray-700">Lançamento do Sandbox CAIXA Always On e revisão geral da norma e governança do Sandbox CAIXA, permitindo que qualquer unidade proponha experimentos a qualquer momento, sem depender de editais.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-yellow-500 pl-6">
+                        <h4 class="font-semibold text-blue-900 mb-2">Setembro 2025 - Lançamento do Sandbox CAIXA NEXT</h4>
+                        <p class="text-gray-700">Expansão do modelo Sandbox CAIXA com Edital aberto para todos os empregados CAIXA do Brasil.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estratégia 2025 Section -->
+        <section id="estrategia" class="mb-20">
+            <div class="section-divider mb-12"></div>
+            <h2 class="text-4xl font-bold text-blue-900 mb-8 text-center">Estratégia do Sandbox CAIXA 2025</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-8 hover-lift mb-8">
+                <p class="text-gray-700 text-lg mb-6">Em 2025, o Sandbox CAIXA entra em uma nova fase de consolidação institucional, com foco em ampliar o impacto da experimentação, fortalecer a governança e integrar a iniciativa às demais frentes de inovação da CAIXA. A estratégia está estruturada em 11 pilares que orientam as ações ao longo do ano.</p>
+                
+                <h3 class="text-2xl font-semibold text-blue-900 mb-4">Objetivos Centrais</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                    <div class="bg-blue-50 p-4 rounded-lg text-center">
+                        <div class="text-2xl mb-2">🎯</div>
+                        <p class="font-semibold text-blue-900">Consolidar a cultura de experimentação</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg text-center">
+                        <div class="text-2xl mb-2">⚖️</div>
+                        <p class="font-semibold text-blue-900">Fortalecer a governança</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg text-center">
+                        <div class="text-2xl mb-2">🏪</div>
+                        <p class="font-semibold text-blue-900">Expandir para rede de varejo</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg text-center">
+                        <div class="text-2xl mb-2">🔗</div>
+                        <p class="font-semibold text-blue-900">Integrar com TEIA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mapa Estratégico -->
+            <div class="bg-white rounded-lg shadow-lg p-8 hover-lift">
+                <h3 class="text-2xl font-semibold text-blue-900 mb-6 text-center">Mapa Estratégico - 11 Pilares</h3>
+                
+                <!-- Camada 1: Governança -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-yellow-600 mb-4 border-b-2 border-yellow-500 pb-2">Camada 1: Governança e Normatização</h4>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg">
+                            <h5 class="font-semibold text-blue-900 mb-2">📋 Revisão da norma MN OR219</h5>
+                            <p class="text-sm text-gray-700">Atualização normativa incorporando aprendizados do ciclo 2024, promovendo mais agilidade, segurança e alinhamento estratégico.</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg">
+                            <h5 class="font-semibold text-blue-900 mb-2">📊 Acompanhamento dos experimentos de 2024</h5>
+                            <p class="text-sm text-gray-700">Monitoramento contínuo dos projetos iniciados no ciclo anterior, com foco em evolução, desafios e decisões sobre continuidade.</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg">
+                            <h5 class="font-semibold text-blue-900 mb-2">👁️ Supervisão do Sandbox REDE</h5>
+                            <p class="text-sm text-gray-700">Acompanhamento dos experimentos conduzidos por empregados da rede de varejo, garantindo suporte e alinhamento estratégico.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Camada 2: Expansão -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-yellow-600 mb-4 border-b-2 border-yellow-500 pb-2">Camada 2: Expansão e Integração</h4>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg">
+                            <h5 class="font-semibold text-green-900 mb-2">🏬 Expansão para REDE de Varejo</h5>
+                            <p class="text-sm text-gray-700">Abertura do Sandbox para empregados lotados em agências, fomentando o intraempreendedorismo na ponta.</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg">
+                            <h5 class="font-semibold text-green-900 mb-2">🧠 Integração com a TEIA</h5>
+                            <p class="text-sm text-gray-700">Disponibilização da governança do Sandbox para projetos priorizados pela TEIA, promovendo sinergia entre iniciativas.</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg">
+                            <h5 class="font-semibold text-green-900 mb-2">🎤 Roadshow de divulgação</h5>
+                            <p class="text-sm text-gray-700">Apresentação da sistemática do Sandbox a gestores de produtos, serviços e processos, incentivando sua adoção.</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg">
+                            <h5 class="font-semibold text-green-900 mb-2">📝 2º Edital de Chamada</h5>
+                            <p class="text-sm text-gray-700">Lançamento em parceria com o CESAR, com temas alinhados aos desafios estratégicos da CAIXA.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Camada 3: Ferramentas -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-yellow-600 mb-4 border-b-2 border-yellow-500 pb-2">Camada 3: Ferramentas e Tecnologia</h4>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg">
+                            <h5 class="font-semibold text-purple-900 mb-2">💻 Nova ferramenta de cadastramento</h5>
+                            <p class="text-sm text-gray-700">Substituição da solução anterior por uma nova plataforma que facilite o registro e acompanhamento dos experimentos.</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg">
+                            <h5 class="font-semibold text-purple-900 mb-2">🔧 Ferramenta de flexibilização normativa</h5>
+                            <p class="text-sm text-gray-700">Finalização de solução que permitirá maior flexibilidade nas normas internas, viabilizando experimentações antes inviáveis.</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg">
+                            <h5 class="font-semibold text-purple-900 mb-2">🖥️ Ambiente Sandbox na TI</h5>
+                            <p class="text-sm text-gray-700">Negociação com a Arquitetura de TI para criação de ambiente técnico de testes controlados de soluções tecnológicas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Camada 4: Reconhecimento -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-yellow-600 mb-4 border-b-2 border-yellow-500 pb-2">Camada 4: Reconhecimento e Visibilidade</h4>
+                    <div class="flex justify-center">
+                        <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg max-w-md">
+                            <h5 class="font-semibold text-orange-900 mb-2">🏆 Participação em premiações</h5>
+                            <p class="text-sm text-gray-700">Inscrição do Sandbox CAIXA em eventos de inovação para reconhecimento institucional e valorização dos resultados.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resultados Esperados -->
+                <div class="static-gradient text-white p-6 rounded-lg">
+                    <h4 class="text-xl font-semibold mb-4 text-center">🎯 Resultados Esperados</h4>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">📈</div>
+                            <h5 class="font-semibold mb-1">Mais Inovações</h5>
+                            <p class="text-sm text-blue-200">Aumento no número de inovações implementadas</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">👥</div>
+                            <h5 class="font-semibold mb-1">Maior Engajamento</h5>
+                            <p class="text-sm text-blue-200">Maior participação dos colaboradores em experimentação</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">⚡</div>
+                            <h5 class="font-semibold mb-1">Mais Agilidade</h5>
+                            <p class="text-sm text-blue-200">Redução no tempo de implementação de soluções</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">🏅</div>
+                            <h5 class="font-semibold mb-1">Reconhecimento</h5>
+                            <p class="text-sm text-blue-200">Reconhecimento institucional em premiações</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experimentos Section -->
+        <section id="experimentos" class="mb-20">
+            <div class="section-divider mb-12"></div>
+            <h2 class="text-4xl font-bold text-blue-900 mb-8 text-center">Resultados de Experimentos</h2>
+            
+            <div class="space-y-12">
+                <!-- Limite Cartão CAIXA com Open Finance -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover-lift">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="bg-blue-100 p-3 rounded-full">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-blue-900">Limite Cartão CAIXA com base em dados do Open Finance</h3>
+                            <p class="text-blue-600 font-medium">🥇 1º Lugar no Sandbox Summit 2025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Equipe do Experimento</h4>
+                            <p class="text-gray-700 mb-4">A iniciativa foi conduzida pela equipe da Gerência Nacional de Risco de Crédito Varejo. O grupo multidisciplinar reuniu especialistas em risco de crédito, análise de dados e canais digitais, garantindo uma abordagem integrada e alinhada à estratégia de centralidade no cliente. A articulação entre as áreas permitiu a construção de um modelo de risco inovador, com base em dados compartilhados via Open Finance.</p>
+                            
+                            <p class="text-gray-700 mb-4">A equipe também contou com suporte técnico para a implementação da campanha de ativação via aplicativo, além de profissionais responsáveis pela análise de resultados e acompanhamento da jornada dos clientes. Essa composição colaborativa foi essencial para garantir a agilidade na execução do experimento e a validação dos resultados em tempo real, com foco na entrega de valor direto ao cliente.</p>
+                            
+                            <h4 class="font-semibold text-gray-800 mb-2">Problema Abordado</h4>
+                            <p class="text-gray-700 mb-4">O desafio central era reposicionar a CAIXA no mercado de cartões de crédito, enfrentando a limitação dos modelos tradicionais de análise de risco que não consideravam dados externos. Muitos clientes com bom histórico de crédito em outras instituições não conseguiam obter limites adequados na CAIXA, o que comprometia a competitividade da oferta e a retenção desses usuários.</p>
+                            
+                            <p class="text-gray-700">Além disso, havia uma lacuna na personalização das propostas de crédito, o que dificultava a fidelização e a conquista de novos clientes. O experimento buscou resolver esse problema ao integrar dados do Open Finance, permitindo uma análise mais precisa e contextualizada da capacidade financeira dos clientes.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Hipóteses Testadas</h4>
+                            <p class="text-gray-700 mb-4">A principal hipótese testada foi que o uso de dados compartilhados via Open Finance permitiria à CAIXA oferecer limites de cartão de crédito mais aderentes à realidade dos clientes, aumentando a taxa de conversão e a satisfação. A equipe também testou se a comunicação personalizada, via push no aplicativo, teria impacto positivo na adesão à oferta.</p>
+                            
+                            <p class="text-gray-700 mb-4">Outra hipótese relevante foi a de que a integração de dados externos poderia reduzir o risco de inadimplência, ao complementar a análise tradicional com informações mais amplas sobre o comportamento financeiro dos clientes. A validação dessas hipóteses foi feita com base em indicadores de contratação, uso do limite e retorno financeiro.</p>
+                            
+                            <h4 class="font-semibold text-gray-800 mb-2">Metodologia Aplicada</h4>
+                            <p class="text-gray-700 mb-4">O experimento foi estruturado com base em uma campanha segmentada, direcionada a clientes que haviam aderido ao Open Finance e possuíam histórico de uso de cartão em outras instituições. A comunicação foi feita por meio de mensagens personalizadas no aplicativo da CAIXA, com proposta de limite pré-aprovado.</p>
+                            
+                            <p class="text-gray-700">A análise de risco utilizou dados compartilhados pelos clientes, como limites de cartões em outras instituições, histórico de pagamentos e perfil de consumo. A metodologia incluiu testes A/B, acompanhamento por dashboards em Power BI e validação contínua dos resultados com base em contratações efetivadas e retorno financeiro.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                        <h4 class="font-semibold text-blue-900 mb-2">📊 Resultados Obtidos</h4>
+                        <p class="text-gray-700 mb-4">O experimento alcançou resultados expressivos: mais de 15 mil clientes foram selecionados, com R$ 100 milhões em limites disponibilizados. Até julho de 2025, foram realizadas 3.673 contratações, totalizando R$ 19,3 milhões em crédito concedido. Esses números demonstram a eficácia da estratégia e o potencial de escalabilidade da solução.</p>
+                        
+                        <p class="text-gray-700">Além dos resultados quantitativos, o experimento gerou aprendizados importantes sobre o comportamento dos clientes e a receptividade à personalização das ofertas. A iniciativa reposicionou a CAIXA como instituição capaz de competir em igualdade de condições com os principais players do mercado, reforçando sua ambição de ser indispensável ao Brasil.</p>
+                    </div>
+                    
+                    <div class="mt-6 bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                        <h4 class="font-semibold text-green-900 mb-2">💡 Lições Aprendidas</h4>
+                        <p class="text-gray-700 mb-4">Uma das principais lições foi a importância da integração de dados externos para aprimorar a análise de risco e personalizar as ofertas. O uso do Open Finance mostrou-se eficaz para identificar oportunidades de crédito que antes passavam despercebidas pelos modelos tradicionais.</p>
+                        
+                        <p class="text-gray-700">Outra lição relevante foi o impacto da comunicação direta e personalizada na adesão dos clientes. A campanha via push app teve alta taxa de conversão, evidenciando que a experiência digital, quando bem estruturada, pode ser um diferencial competitivo. A iniciativa também reforçou a necessidade de governança robusta na gestão dos dados compartilhados.</p>
+                    </div>
+                    
+                    <div class="mt-6 bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
+                        <h4 class="font-semibold text-purple-900 mb-2">🚀 Potencial de Escala</h4>
+                        <p class="text-gray-700 mb-4">O modelo testado possui alto potencial de escalabilidade, podendo ser aplicado a outros produtos de crédito, como empréstimos pessoais e financiamentos. A integração com o Open Finance permite replicar a abordagem para diferentes perfis de clientes, ampliando o alcance da estratégia.</p>
+                        
+                        <p class="text-gray-700">Além disso, a infraestrutura tecnológica e os processos de análise já estão consolidados, o que facilita a expansão da solução para outras regiões e canais. A iniciativa pode ser incorporada como prática permanente na gestão de crédito da CAIXA, com impacto direto na competitividade e na geração de valor para os clientes.</p>
+                    </div>
+                </div>
+                
+                <!-- Hora de Acordar -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover-lift">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="bg-orange-100 p-3 rounded-full">
+                            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5a2 2 0 012-2h4a2 2 0 012 2v2H8V5z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-blue-900">Hora de Acordar – Conciliação de Contratos Habitacionais</h3>
+                            <p class="text-orange-600 font-medium">🏆 Finalista no Sandbox Summit 2025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Equipe do Experimento</h4>
+                            <p class="text-gray-700 mb-4">O experimento "Hora de Acordar" foi conduzido pela equipe da DIJUR – Diretoria Jurídica, com participação ativa da GEJUR e da CEJUR. A iniciativa contou com o envolvimento direto de advogados da CAIXA em campo, além de especialistas em gestão de ativos e operações habitacionais. Essa composição multidisciplinar foi essencial para garantir uma abordagem jurídica inovadora, alinhada às necessidades operacionais e à experiência do cliente.</p>
+                            
+                            <p class="text-gray-700 mb-4">A atuação conjunta das áreas jurídicas e operacionais permitiu a construção de um fluxo de conciliação eficiente, com base em parâmetros previamente testados. A equipe também foi responsável por promover a atualização normativa que viabilizou a aplicação prática do experimento, consolidando a entrega como uma transformação institucional relevante.</p>
+                            
+                            <h4 class="font-semibold text-gray-800 mb-2">Problema Abordado</h4>
+                            <p class="text-gray-700 mb-4">O desafio enfrentado pela equipe era a judicialização de contratos habitacionais inadimplentes que impediam a venda de imóveis da CAIXA. Esses processos, muitas vezes paralisados por anos, geravam impactos negativos na gestão de ativos, na recuperação de crédito e na imagem institucional da empresa. Além disso, os clientes em situação de inadimplência enfrentavam dificuldades para renegociar suas dívidas, o que agravava o problema social da moradia.</p>
+                            
+                            <p class="text-gray-700">A ausência de um fluxo claro e ágil para conciliação judicial dificultava a resolução desses casos, gerando custos elevados com honorários advocatícios e custas processuais. O experimento buscou enfrentar esse problema com uma abordagem humanizada, eficiente e juridicamente segura, promovendo acordos que permitissem a retomada dos contratos e a liberação dos imóveis para venda.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Hipóteses Testadas</h4>
+                            <p class="text-gray-700 mb-4">A principal hipótese testada foi que a criação de um fluxo de conciliação judicial estruturado, com base em parâmetros previamente validados, permitiria a resolução de contratos inadimplentes de forma mais rápida, segura e eficaz. A equipe também testou se a autonomia dos advogados da CAIXA, ampliada pela atualização normativa, contribuiria para agilizar os acordos e reduzir a dependência de decisões judiciais.</p>
+                            
+                            <p class="text-gray-700 mb-4">Outra hipótese relevante foi a de que a conciliação judicial poderia gerar impacto positivo na recuperação de crédito, na redução do passivo judicial e na melhoria da experiência do cliente. A validação dessas hipóteses foi feita com base em indicadores como taxa de sucesso das audiências, número de acordos formalizados e impacto contábil no balanço da CAIXA.</p>
+                            
+                            <h4 class="font-semibold text-gray-800 mb-2">Metodologia Aplicada</h4>
+                            <p class="text-gray-700 mb-4">O experimento foi estruturado em duas frentes principais: atualização normativa e execução prática do piloto. A norma interna foi revisada para incorporar de forma definitiva a possibilidade de conciliação judicial em ações que impedem a venda de imóveis, estabelecendo procedimentos claros para registro, averbação e execução das decisões. Essa atualização conferiu maior autonomia aos advogados e segurança jurídica aos acordos.</p>
+                            
+                            <p class="text-gray-700">A primeira fase do piloto foi realizada em julho de 2025, com a seleção de 10 contratos habitacionais inadimplentes para conciliação no estado do Paraná. As audiências foram conduzidas com base nos novos parâmetros, e os resultados foram monitorados em tempo real. A metodologia incluiu triagens nos tribunais, análise de impacto contábil e projeção de indicadores financeiros e operacionais.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 bg-orange-50 p-4 rounded-lg border-l-4 border-orange-500">
+                        <h4 class="font-semibold text-orange-900 mb-2">📊 Resultados Obtidos</h4>
+                        <p class="text-gray-700 mb-4">Os resultados foram expressivos: 9 clientes compareceram às audiências e 7 acordos foram formalizados, representando uma taxa de sucesso de 77%. Estima-se que o acervo total de processos com potencial de conciliação ultrapasse 7 mil imóveis, com impacto contábil aproximado de R$ 2 bilhões em ativos imobilizados. A economia com custas processuais e honorários pode superar R$ 200 milhões em escala nacional.</p>
+                        
+                        <p class="text-gray-700">Além dos resultados financeiros, o experimento promoveu uma mudança significativa na abordagem jurídica da CAIXA, com foco na humanização do atendimento e na resolução ágil de conflitos. A iniciativa também contribuiu para a melhoria da imagem institucional da empresa, ao demonstrar proatividade na gestão da carteira habitacional e compromisso com a função social da moradia.</p>
+                    </div>
+                    
+                    <div class="mt-6 bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                        <h4 class="font-semibold text-green-900 mb-2">💡 Lições Aprendidas</h4>
+                        <p class="text-gray-700 mb-4">Uma das principais lições foi a importância da flexibilidade normativa para viabilizar soluções inovadoras no campo jurídico. A atualização da norma permitiu a criação de um fluxo eficiente e seguro para conciliação, que pode ser replicado em outras regiões e contextos. A autonomia dos advogados mostrou-se essencial para agilizar os acordos e reduzir a judicialização.</p>
+                        
+                        <p class="text-gray-700">Outra lição relevante foi o impacto positivo da conciliação na experiência do cliente. Ao oferecer uma alternativa viável para renegociação da dívida, a CAIXA promoveu inclusão financeira e recuperação de crédito, fortalecendo o vínculo com os clientes. A iniciativa também evidenciou a importância da atuação integrada entre áreas jurídicas, operacionais e de gestão de ativos.</p>
+                    </div>
+                    
+                    <div class="mt-6 bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
+                        <h4 class="font-semibold text-purple-900 mb-2">🚀 Potencial de Escala</h4>
+                        <p class="text-gray-700 mb-4">O modelo testado possui alto potencial de escalabilidade, podendo ser expandido para outras regiões do país e para o âmbito extrajudicial. A proposta de fluxo administrativo homologável judicialmente abre caminho para prevenir a judicialização e ampliar o alcance da solução. A integração com plataformas digitais de atendimento e negociação também pode acelerar a replicação do modelo.</p>
+                        
+                        <p class="text-gray-700">Com a consolidação dos dados financeiros e operacionais do piloto, será possível mensurar indicadores como economia com custas, reversão de inadimplência e impacto contábil. A iniciativa pode se tornar uma prática permanente na gestão da carteira habitacional da CAIXA, com ganhos relevantes para a instituição e para a sociedade.</p>
+                    </div>
+                </div>
+                
+                <!-- Proteção CAIXA -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover-lift">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="bg-green-100 p-3 rounded-full">
+                            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-blue-900">Proteção CAIXA – Segurança em Autoatendimento</h3>
+                            <p class="text-green-600 font-medium">🛡️ Experimento de Segurança</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Equipe do Experimento</h4>
+                            <p class="text-gray-700 mb-4">O experimento "Proteção CAIXA" foi idealizado por Antonio Carlos Dela Libera Camargo, gerente geral da agência Alexandrina, e contou com a colaboração de diversas áreas da CAIXA, incluindo GESEP, GEIDE, GECOT, GEFIC, GELOG e GEAUS. Essa articulação entre áreas operacionais, de segurança e atendimento foi fundamental para garantir uma abordagem prática e eficaz.</p>
+                            
+                            <p class="text-gray-700 mb-4">A equipe envolvida demonstrou forte capacidade de execução e integração, atuando desde a concepção da ideia até a implementação dos dispositivos de áudio nas salas de autoatendimento. A participação ativa das agências-piloto e o engajamento dos gestores locais foram determinantes para o sucesso da iniciativa, que se destacou pela simplicidade da solução e pelo impacto direto na segurança dos clientes.</p>
+                            
+                            <h4 class="font-semibold text-gray-800 mb-2">Problema Abordado</h4>
+                            <p class="text-gray-700 mb-4">O experimento foi desenvolvido para enfrentar um problema recorrente nas salas de autoatendimento da CAIXA: fraudes praticadas por golpistas que utilizam bloqueios físicos nos terminais e induzem os clientes ao erro, especialmente nos fins de semana. Essas ações geravam prejuízos financeiros, insegurança para os usuários e desgaste na imagem institucional da empresa.</p>
+                            
+                            <p class="text-gray-700">A ausência de mecanismos preventivos simples e eficazes tornava difícil a contenção dessas práticas fraudulentas. O desafio era encontrar uma solução de baixo custo, fácil implementação e alto impacto, capaz de inibir a atuação dos golpistas e proteger os clientes durante o uso dos terminais de autoatendimento.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Hipóteses Testadas</h4>
+                            <p class="text-gray-700 mb-4">A principal hipótese testada foi que a instalação de dispositivos de áudio com mensagens de orientação e alerta seria suficiente para reduzir significativamente as ocorrências de fraude nas salas de autoatendimento. A equipe também avaliou se a presença sonora contínua poderia gerar um ambiente de maior atenção e segurança para os clientes.</p>
+                            
+                            <p class="text-gray-700 mb-4">Outra hipótese relevante foi a de que a solução, por ser simples e de fácil replicação, poderia ser adotada em larga escala sem necessidade de grandes investimentos ou alterações estruturais. A eficácia da abordagem seria validada por meio da comparação entre agências que implementaram integralmente o modelo e aquelas que não conseguiram aplicar todas as recomendações.</p>
+                            
+                            <h4 class="font-semibold text-gray-800 mb-2">Metodologia Aplicada</h4>
+                            <p class="text-gray-700 mb-4">A metodologia adotada foi prática e direta: instalação de dispositivos de áudio nas salas de autoatendimento, com reprodução contínua de mensagens educativas e de alerta. As mensagens foram cuidadosamente elaboradas para orientar os clientes sobre os riscos de fraude e os procedimentos seguros de uso dos terminais.</p>
+                            
+                            <p class="text-gray-700">O experimento foi implementado em diversas agências, com destaque para Alexandrina, Itapira e Tropeiros. A equipe monitorou os resultados por meio de indicadores de ocorrências fraudulentas, comparando os dados antes e depois da implementação. Também foram coletadas percepções dos clientes e dos gestores locais sobre a eficácia da solução.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                        <h4 class="font-semibold text-green-900 mb-2">📊 Resultados Obtidos</h4>
+                        <p class="text-gray-700 mb-4">Desde o início da implementação, em dezembro de 2024, o experimento demonstrou resultados expressivos: redução de 62,3% nas ocorrências fraudulentas e economia estimada de R$ 284 mil. As agências que seguiram integralmente o modelo proposto apresentaram desempenho significativamente superior às que não conseguiram aplicar todas as recomendações, evidenciando a eficácia da solução.</p>
+                        
+                        <p class="text-gray-700">Além dos resultados financeiros, o experimento gerou impacto positivo na segurança dos clientes e na confiança no uso dos canais físicos. A iniciativa também contribuiu para a melhoria da experiência de atendimento, ao promover um ambiente mais seguro e acolhedor nas salas de autoatendimento da CAIXA.</p>
+                    </div>
+                    
+                    <div class="mt-6 bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                        <h4 class="font-semibold text-blue-900 mb-2">💡 Lições Aprendidas</h4>
+                        <p class="text-gray-700 mb-4">Uma das principais lições foi que soluções simples e de baixo custo podem gerar impactos significativos quando bem direcionadas. A eficácia dos dispositivos de áudio demonstrou que a prevenção por meio de orientação contínua é mais eficiente do que medidas reativas após a ocorrência de fraudes.</p>
+                        
+                        <p class="text-gray-700">Outra lição importante foi a necessidade de implementação integral do modelo para garantir os melhores resultados. As agências que seguiram todas as recomendações obtiveram desempenho superior, evidenciando que a disciplina na execução é fundamental para o sucesso de iniciativas de segurança.</p>
+                    </div>
+                    
+                    <div class="mt-6 bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
+                        <h4 class="font-semibold text-purple-900 mb-2">🚀 Potencial de Escala</h4>
+                        <p class="text-gray-700 mb-4">O modelo possui excelente potencial de escalabilidade, podendo ser replicado em todas as agências da CAIXA com investimento relativamente baixo. A simplicidade da solução facilita a implementação em larga escala, e os resultados já obtidos justificam a expansão nacional da iniciativa.</p>
+                        
+                        <p class="text-gray-700">A padronização das mensagens e dos procedimentos de instalação pode acelerar a adoção em outras regiões. Além disso, a solução pode ser adaptada para diferentes contextos e tipos de fraude, ampliando seu escopo de proteção e consolidando a CAIXA como referência em segurança de autoatendimento.</p>
+                    </div>
+                </div>
+                
+                <!-- Parametrizador Fiscal -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover-lift">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="bg-purple-100 p-3 rounded-full">
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-blue-900">Parametrizador Fiscal – Prototipação Estratégica para Eficiência e Escalabilidade</h3>
+                            <p class="text-purple-600 font-medium">🥉 3º Lugar no Sandbox Summit 2025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Equipe do Experimento</h4>
+                            <p class="text-gray-700 mb-4">O desenvolvimento do Parametrizador Fiscal foi conduzido por uma equipe técnica especializada em tributação, automação de processos e governança fiscal da CAIXA. A iniciativa envolveu profissionais das áreas de negócios, tecnologia e jurídico, que atuaram de forma colaborativa para garantir que a solução atendesse aos requisitos legais e operacionais da instituição.</p>
+                            
+                            <p class="text-gray-700 mb-4">A equipe responsável pela prototipação trabalhou com metodologias ágeis, promovendo ciclos curtos de desenvolvimento e validação. A integração entre os especialistas em regras fiscais e os desenvolvedores foi essencial para traduzir a complexidade normativa em funcionalidades práticas e automatizadas, garantindo a consistência e a segurança jurídica da solução.</p>
+                            
+                            <h4 class="font-semibold text-gray-800 mb-2">Problema Abordado</h4>
+                            <p class="text-gray-700 mb-4">A CAIXA enfrentava desafios significativos na gestão das regras fiscais aplicáveis às suas operações. A ausência de uma ferramenta centralizada e automatizada dificultava a padronização dos processos, gerando riscos de inconsistência, retrabalho e exposição a penalidades legais. Além disso, a dependência de processos manuais tornava a atualização das regras fiscais lenta e suscetível a erros.</p>
+                            
+                            <p class="text-gray-700">O problema se agravava com a diversidade de operações e a necessidade de conformidade com legislações municipais, estaduais e federais. A falta de rastreabilidade e controle dificultava auditorias e análises estratégicas, comprometendo a eficiência operacional e a capacidade de resposta da instituição às mudanças regulatórias.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Hipóteses Testadas</h4>
+                            <p class="text-gray-700 mb-4">A principal hipótese testada foi que a criação de uma ferramenta digital para parametrização fiscal permitiria automatizar e padronizar as regras aplicáveis às operações da CAIXA, promovendo maior segurança jurídica, eficiência operacional e escalabilidade. A equipe também testou se a solução poderia reduzir o tempo de atualização das regras e facilitar a gestão de conformidade.</p>
+                            
+                            <p class="text-gray-700 mb-4">Outra hipótese relevante foi a de que a ferramenta, ao centralizar o controle das regras fiscais, permitiria maior rastreabilidade e transparência nos processos, contribuindo para auditorias mais eficazes e decisões estratégicas mais embasadas. A validação dessas hipóteses foi feita por meio de testes funcionais, simulações de uso e análise de indicadores de desempenho.</p>
+                            
+                            <h4 class="font-semibold text-gray-800 mb-2">Metodologia Aplicada</h4>
+                            <p class="text-gray-700 mb-4">A metodologia aplicada seguiu os princípios da prototipação rápida e da experimentação estruturada. A equipe desenvolveu um MVP (Produto Mínimo Viável) com funcionalidades essenciais, como cadastro de regras fiscais, histórico de alterações, controle de acesso por perfil e geração de relatórios. O desenvolvimento foi realizado em ciclos iterativos, com validações constantes junto aos usuários finais.</p>
+                            
+                            <p class="text-gray-700">A solução foi testada em ambiente controlado, com simulações de operações reais e análise de conformidade. Foram utilizados critérios técnicos e jurídicos para validar a aderência das funcionalidades às necessidades da CAIXA. A equipe também promoveu sessões de feedback com os usuários, ajustando o protótipo conforme as demandas identificadas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
+                        <h4 class="font-semibold text-purple-900 mb-2">📊 Resultados Obtidos</h4>
+                        <p class="text-gray-700 mb-4">O MVP do Parametrizador Fiscal foi concluído com sucesso, contemplando as principais funcionalidades previstas. A ferramenta demonstrou capacidade de automatizar o cadastro e a aplicação das regras fiscais, reduzindo significativamente o tempo de atualização e o risco de inconsistência. A geração de relatórios e o controle de acesso por perfil também foram validados como eficazes.</p>
+                        
+                        <p class="text-gray-700">Os testes indicaram que a solução pode melhorar a eficiência dos processos fiscais, facilitar auditorias e promover maior segurança jurídica. A iniciativa posiciona a CAIXA como referência em inovação na gestão tributária, com uma ferramenta que pode ser integrada aos sistemas corporativos e utilizada em larga escala.</p>
+                    </div>
+                    
+                    <div class="mt-6 bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                        <h4 class="font-semibold text-green-900 mb-2">💡 Lições Aprendidas</h4>
+                        <p class="text-gray-700 mb-4">Uma das principais lições foi a importância da colaboração multidisciplinar entre especialistas em tributação, tecnologia e jurídico. A integração dessas competências foi fundamental para traduzir a complexidade normativa em soluções práticas e funcionais. A metodologia ágil mostrou-se eficaz para lidar com a natureza dinâmica das regras fiscais.</p>
+                        
+                        <p class="text-gray-700">Outra lição relevante foi a necessidade de validação constante com os usuários finais. O feedback contínuo permitiu ajustes precisos no protótipo, garantindo que a solução atendesse às necessidades reais dos processos fiscais da CAIXA. A iniciativa também evidenciou o potencial de automação para reduzir riscos e aumentar a eficiência operacional.</p>
+                    </div>
+                    
+                    <div class="mt-6 bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                        <h4 class="font-semibold text-blue-900 mb-2">🚀 Potencial de Escala</h4>
+                        <p class="text-gray-700 mb-4">O Parametrizador Fiscal possui excelente potencial de escalabilidade, podendo ser integrado aos sistemas corporativos da CAIXA e expandido para atender a todas as operações da instituição. A arquitetura modular da solução facilita a incorporação de novas regras fiscais e a adaptação a mudanças regulatórias.</p>
+                        
+                        <p class="text-gray-700">A ferramenta pode ser replicada para outras áreas que lidam com conformidade regulatória, ampliando seu impacto organizacional. Além disso, a experiência adquirida no desenvolvimento pode ser compartilhada com outras instituições públicas, contribuindo para a modernização da gestão fiscal no setor público brasileiro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parcerias Section -->
+        <section id="parcerias" class="mb-20">
+            <div class="section-divider mb-12"></div>
+            <h2 class="text-4xl font-bold text-blue-900 mb-8 text-center">Parcerias com Ecossistema de Inovação</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-8 hover-lift">
+                <div class="mb-8">
+                    <p class="text-gray-700 text-lg mb-6">O Sandbox CAIXA tem se consolidado como uma plataforma de experimentação estruturada que não apenas promove inovação interna, mas também se conecta de forma ativa com o ecossistema de inovação. Essa estratégia de colaboração é essencial para ampliar a capacidade da CAIXA de cocriar soluções com alto potencial de impacto, acelerar ciclos de validação e incorporar práticas de inovação aberta.</p>
+                    
+                    <p class="text-gray-700 text-lg mb-6">Nesse contexto, o Sandbox Papers registra e compartilha os aprendizados gerados a partir de parcerias estratégicas com organizações que atuam em diferentes frentes da inovação. Entre os parceiros estão instituições como The Collab, IBM, Match it, CESAR, ServiceNow e o próprio Espaço TEIA, que contribuem com conhecimento técnico, metodologias ágeis, plataformas digitais, redes de startups e ambientes colaborativos. Essas conexões fortalecem a capacidade institucional da CAIXA de responder com agilidade aos desafios do presente e antecipar as demandas do futuro.</p>
+                    
+                    <p class="text-gray-700 text-lg">Mais do que apoio técnico, essas parcerias representam uma aliança de propósito: promover a transformação digital com foco no cliente, fomentar o intraempreendedorismo e consolidar a CAIXA como agente de inovação no setor público. O Sandbox Papers é o espaço onde essas conexões são documentadas, analisadas e compartilhadas, promovendo transparência, replicabilidade e inspiração para outras organizações que desejam adotar modelos de experimentação estruturada e inovação aberta.</p>
+                </div>
+
+                <!-- Parceiros Estratégicos -->
+                <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-8 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-blue-900 mb-6 text-center">Parceiros Estratégicos</h3>
+                    
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- The Collab -->
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-gray-800">The Collab</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Metodologias ágeis e cultura de experimentação</p>
+                        </div>
+
+                        <!-- IBM -->
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-gray-800">IBM</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Plataformas de inteligência artificial e tecnologia</p>
+                        </div>
+
+                        <!-- Match it -->
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-gray-800">Match it</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Conexão com startups e ecossistema de inovação</p>
+                        </div>
+
+                        <!-- CESAR -->
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-gray-800">CESAR</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Pesquisa e desenvolvimento tecnológico</p>
+                        </div>
+
+                        <!-- ServiceNow -->
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-gray-800">ServiceNow</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Automação de processos e fluxos de trabalho</p>
+                        </div>
+
+                        <!-- Espaço TEIA -->
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-gray-800">Espaço TEIA</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Hub de inovação e ambientes colaborativos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eventos Section -->
+        <section id="eventos" class="mb-20">
+            <div class="section-divider mb-12"></div>
+            <h2 class="text-4xl font-bold text-blue-900 mb-8 text-center">Eventos e Mobilizações</h2>
+            
+            <div class="space-y-8">
+                <!-- Sandbox Summit 2025 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover-lift">
+                    <h3 class="text-2xl font-semibold text-blue-900 mb-6">🎯 Sandbox Summit 2025</h3>
+                    
+                    <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-lg mb-6">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-blue-600 text-white p-3 rounded-full">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-blue-900">7 de fevereiro de 2025</h4>
+                                <p class="text-blue-700">Espaço TEIA - Centro de Convenções Ulysses Guimarães, Brasília</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">O evento marcou o encerramento do ciclo de aceleração de projetos do Sandbox CAIXA, premiando as iniciativas que mais se destacaram em desenvolvimento, execução e apresentação de resultados.</p>
+                    </div>
+
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold text-blue-900 mb-4">📋 Organização e Alcance</h4>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h5 class="font-semibold text-gray-800 mb-2">Organizadores</h5>
+                                <p class="text-sm text-gray-600">Gerência Nacional de Inovação (GEINA) em parceria com o CoE Inovação da TEIA</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h5 class="font-semibold text-gray-800 mb-2">Participação</h5>
+                                <p class="text-sm text-gray-600">Representantes de todas as vice-presidências da CAIXA com transmissão ao vivo via Teams</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Premiação -->
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold text-blue-900 mb-6">🏆 Premiação dos Projetos</h4>
+                        <p class="text-gray-700 mb-6">Entre os dez finalistas, três projetos foram premiados por seu desempenho e impacto:</p>
+                        
+                        <!-- 1º Lugar -->
+                        <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-500 p-6 rounded-lg mb-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="text-4xl font-bold">🥇</div>
+                                <div class="flex-1">
+                                    <h5 class="text-lg font-bold text-yellow-800 mb-2">1º lugar – Limite de Cartão de Crédito CAIXA igual Open Finance</h5>
+                                    <p class="text-sm text-gray-600 mb-2"><strong>Área:</strong> VP Riscos (VICOR)</p>
+                                    <p class="text-gray-700 mb-3"><strong>Descrição:</strong> Projeto disruptivo que ajusta os limites de crédito da CAIXA aos padrões do mercado, com foco em segurança e experiência do cliente.</p>
+                                    <blockquote class="italic text-gray-600 border-l-2 border-yellow-400 pl-3">
+                                        "Realmente é emocionante pra gente como área de Riscos receber uma premiação em Inovação. Nessa oportunidade do Sandbox a gente tinha o medo de errar, para não haver perda financeira para o banco. Sempre foi um anseio dos clientes que a CAIXA trabalhasse com os limites de crédito que o mercado trabalha. Temos outras frentes em andamento no mesmo modelo disruptivo, também estamos envolvidos nesse movimento" - VP Henriete Sartori
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2º Lugar -->
+                        <div class="bg-gradient-to-r from-gray-50 to-gray-100 border-l-4 border-gray-400 p-6 rounded-lg mb-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="text-4xl font-bold">🥈</div>
+                                <div class="flex-1">
+                                    <h5 class="text-lg font-bold text-gray-800 mb-2">2º lugar – CAIXA Connect Comex</h5>
+                                    <p class="text-sm text-gray-600 mb-2"><strong>Área:</strong> VP Negócios de Atacado (VINAT)</p>
+                                    <p class="text-gray-700"><strong>Descrição:</strong> Sistema de autosserviço para o mercado de câmbio, desenvolvido com apoio da Tesouraria da CAIXA e validado com feedback positivo de clientes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3º Lugar -->
+                        <div class="bg-gradient-to-r from-orange-50 to-orange-100 border-l-4 border-orange-500 p-6 rounded-lg mb-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="text-4xl font-bold">🥉</div>
+                                <div class="flex-1">
+                                    <h5 class="text-lg font-bold text-orange-800 mb-2">3º lugar – Parametrizador Fiscal</h5>
+                                    <p class="text-sm text-gray-600 mb-2"><strong>Área:</strong> VP Finanças e Controladoria (VIFIC)</p>
+                                    <p class="text-gray-700 mb-3"><strong>Descrição:</strong> Conduzido por empregados da VP Finanças e Controladoria, que receberam o troféu das mãos do seu vice-presidente, Marcos Brasiliano.</p>
+                                    <blockquote class="italic text-gray-600 border-l-2 border-orange-400 pl-3">
+                                        "De acordo com a gerente nacional s.e. da GETRI, Cristiane Fragoso de Souza Nelson, uma das experimentadoras do Parametrizador Fiscal, o projeto há muitos anos vinha sendo trabalhado e o Sandbox possibilitou que ele fosse acelerado. 'Queremos então agradecer à CAIXA e a todos envolvidos por essa aceleração. Agradecer ao time tributário como um todo, essa é uma entrega dentre tantas outras nesse trabalho essencial, mas é um trabalho de bastidor. Então ter um trabalho nosso reconhecido dessa forma é uma oportunidade que a gente leva pra toda a equipe que está cuidando de tantas outras frentes da área de tributação'"
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finalistas -->
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold text-blue-900 mb-4">🧪 Finalistas do Sandbox 2025</h4>
+                        <p class="text-gray-700 mb-4">Os dez projetos finalistas representaram diversas áreas da CAIXA:</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="space-y-2">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                    <span class="text-sm">PPP IP – VIGOV</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                    <span class="text-sm">ENCAIXA – VIMAR</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                    <span class="text-sm">Aluga Fácil – DECCI</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                    <span class="text-sm">CAIXA Connect COMEX – VINAT</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                    <span class="text-sm">Hora de Acordar – DIJUR</span>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                    <span class="text-sm">Parametrizador Fiscal – VIFIC</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                    <span class="text-sm">Venda de Fundos por Lotérica – VIART</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                    <span class="text-sm">Limite de Cartão igual Open Finance – VICOR</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                    <span class="text-sm">Marketplace Alienação Imóveis CAIXA – VILOS</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                    <span class="text-sm">Distribution B2B – DICAR</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Palestra de Encerramento -->
+                    <div class="bg-gradient-to-r from-purple-50 to-purple-100 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-purple-900 mb-4">🎙️ Palestra de Encerramento</h4>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-purple-600 text-white p-3 rounded-full">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-purple-900 mb-2">"Cultura de Experimentação"</h5>
+                                <p class="text-sm text-gray-700 mb-2"><strong>Palestrante:</strong> Diego Aristides, fundador e CEO da The Collab</p>
+                                <p class="text-gray-600">A apresentação reforçou a importância de ambientes seguros para testar ideias e promover inovação contínua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hackathon -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover-lift">
+                    <h3 class="text-2xl font-semibold text-blue-900 mb-6">🚀 Participação do Sandbox CAIXA no Hackathon – Brasília + TI</h3>
+                    
+                    <div class="bg-gradient-to-r from-green-50 to-green-100 p-6 rounded-lg mb-6">
+                        <p class="text-lg font-medium text-green-800 text-center mb-4">A inovação acontece quando conectamos pessoas, ideias e tecnologia.</p>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <p class="text-gray-700">Durante o evento Brasília + TI, o Sandbox CAIXA marcou presença no Hackathon com uma proposta ousada e estratégica: desafiar a comunidade de tecnologia a criar uma solução baseada em Agentes de Inteligência Artificial para apoiar o processo de triagem, avaliação e classificação de ideias e experimentos.</p>
+                        
+                        <p class="text-gray-700">O desafio proposto pela equipe do Sandbox CAIXA apresentou uma abordagem inovadora para lidar com o crescente volume de propostas recebidas pelo programa. A meta é clara: ganhar escala, aumentar a adesão ao programa e garantir qualidade ponta a ponta, desde a entrada das ideias até sua avaliação estruturada.</p>
+                        
+                        <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+                            <p class="text-gray-700 mb-4">A participação no Hackathon foi mais do que uma exposição institucional — foi uma oportunidade de conectar o ecossistema de inovação aberta à missão da CAIXA de transformar serviços públicos com tecnologia de ponta. A proposta inspirou startups, desenvolvedores e especialistas em IA a refletirem sobre como a inteligência artificial pode ser aplicada de forma empática e eficiente na gestão da inovação.</p>
+                            
+                            <div class="flex items-start space-x-3">
+                                <div class="text-2xl">💡</div>
+                                <p class="text-gray-700">A troca com a comunidade foi enriquecedora. O evento contou com a parceria estratégica da IBM, que disponibilizou ferramentas como o Watson para apoiar os participantes no desenvolvimento das soluções. A energia criativa e o engajamento dos envolvidos reforçaram a convicção de que soluções transformadoras surgem da colaboração entre diferentes saberes e experiências.</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-700 font-medium">Essa iniciativa reforça o papel do Sandbox CAIXA como plataforma de experimentação estruturada, capaz de acolher o erro inteligente, acelerar a validação de ideias e promover uma cultura de inovação aberta e inclusiva dentro da CAIXA e para a sociedade.</p>
+                    </div>
+                </div>
+
+ <!-- Palestras em Eventos Nacionais -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover-lift">
+                    <h3 class="text-2xl font-semibold text-blue-900 mb-6">🎤 Palestras em Eventos Nacionais de Inovação</h3>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="w-full border-collapse">
+                            <thead>
+                                <tr class="bg-blue-50">
+                                    <th class="border border-blue-200 px-4 py-3 text-left font-semibold text-blue-900">Data</th>
+                                    <th class="border border-blue-200 px-4 py-3 text-left font-semibold text-blue-900">Evento</th>
+                                    <th class="border border-blue-200 px-4 py-3 text-left font-semibold text-blue-900">Local</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">Março 2024</td>
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">
+                                        <div class="flex items-center justify-between">
+                                            <span>Campus Party Brasil 2024 (CPBR16)</span>
+                                            <a href="https://www.youtube.com/watch?v=lmGP755p42A&t=26s" 
+                                               target="_blank" 
+                                               class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-xs font-medium ml-2">
+                                                <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h1m4 0h1m6-10V7a3 3 0 00-3-3H6a3 3 0 00-3 3v1M2 17h20v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2z"></path>
+                                                </svg>
+                                                Assistir
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">São Paulo</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">Agosto 2024</td>
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">Startup Summit 2024</td>
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">Florianópolis</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">Setembro 2024</td>
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">
+                                        <div class="flex items-center justify-between">
+                                            <span>Reconectar com Tecnologia</span>
+                                            <a href="https://www.youtube.com/watch?v=U6Un6dWTUCA&t=5s" 
+                                               target="_blank" 
+                                               class="inline-flex items-center px-3 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-xs font-medium ml-2">
+                                                <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h1m4 0h1m6-10V7a3 3 0 00-3-3H6a3 3 0 00-3 3v1M2 17h20v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2z"></path>
+                                                </svg>
+                                                Assistir
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">São Paulo</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">Setembro 2024</td>
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">Innovation Day BRB 2024</td>
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">Brasília</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">Abril 2025</td>
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">Agile Trends 2025</td>
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">São Paulo</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">Junho 2025</td>
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">Conexão Inovação Pública 2025 (5ª edição)</td>
+                                    <td class="border border-gray-200 px-4 py-3 text-gray-700">Belo Horizonte</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mt-6 bg-blue-50 p-4 rounded-lg">
+                        <p class="text-sm text-gray-700">
+                            <strong>Objetivo:</strong> Compartilhar as experiências e aprendizados do Sandbox CAIXA com o ecossistema nacional de inovação, 
+                            fortalecendo a rede de colaboração entre instituições públicas e privadas e posicionando a CAIXA como referência em experimentação estruturada.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prêmios Section -->
+        <section id="premios" class="mb-20">
+            <div class="section-divider mb-12"></div>
+            <h2 class="text-4xl font-bold text-blue-900 mb-8 text-center">🏆 Prêmios e Reconhecimentos</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-8 hover-lift">
+                <div class="text-center mb-8">
+                    <p class="text-lg text-gray-700 max-w-4xl mx-auto">O modelo Sandbox CAIXA tem se consolidado como referência nacional em inovação pública, sendo reconhecido por sua capacidade de estruturar ambientes seguros e estratégicos para experimentação. A seguir, os principais prêmios conquistados e reconhecimentos recebidos:</p>
+                </div>
+
+                <div class="space-y-8">
+                    <!-- 1º Lugar Conexão Inova -->
+                    <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-500 p-8 rounded-lg">
+                        <div class="flex items-start space-x-6">
+                            <div class="text-5xl font-bold flex-shrink-0">🥇</div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-yellow-800 mb-3">1º Lugar no Prêmio Conexão Inova 2025</h3>
+                                <div class="mb-4">
+                                    <span class="inline-block bg-yellow-200 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium mr-2 mb-2">Voto Popular</span>
+                                    <span class="inline-block bg-yellow-200 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium mb-2">Gestão em Organizações Públicas</span>
+                                </div>
+                                <p class="text-gray-700 mb-3"><strong>Categoria:</strong> Ações em Andamento</p>
+                                <p class="text-gray-700">Premiação realizada durante o evento Convergência 2025, em Belo Horizonte, com mais de 1.500 participantes. Reconhecimento pela capacidade de promover inovação com responsabilidade e foco na experiência do cliente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3º Lugar Inovativos -->
+                    <div class="bg-gradient-to-r from-orange-50 to-orange-100 border-l-4 border-orange-500 p-8 rounded-lg">
+                        <div class="flex items-start space-x-6">
+                            <div class="text-5xl font-bold flex-shrink-0">🥉</div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-orange-800 mb-3">3º Lugar no Prêmio Inovativos 2024</h3>
+                                <div class="mb-4">
+                                    <span class="inline-block bg-orange-200 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">Reinvenção das Organizações</span>
+                                </div>
+                                <p class="text-gray-700 mb-3"><strong>Categoria:</strong> Capacitação Digital</p>
+                                <p class="text-gray-700 mb-4">Reconhecimento pela contribuição ao desenvolvimento tecnológico do Brasil e pela liderança em inovação digital.</p>
+                                <div class="mt-4">
+                                    <a href="https://inovativos.com.br/premio/vencedores/caixa-economica-inovacao-para-experimentacao-segura-e-estrategica/" 
+                                       target="_blank" 
+                                       class="inline-flex items-center px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors text-sm font-medium">
+                                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                        </svg>
+                                        Ver Case Completo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finalista Agile Trends -->
+                    <div class="bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-blue-500 p-8 rounded-lg">
+                        <div class="flex items-start space-x-6">
+                            <div class="text-5xl font-bold flex-shrink-0">🏁</div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-blue-800 mb-3">Finalista do Agile Trends GOV</h3>
+                                <p class="text-gray-700">Reconhecimento como iniciativa inovadora no setor público com foco em agilidade, transformação digital e experimentação estratégica.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impacto dos Reconhecimentos -->
+                <div class="mt-12 bg-gradient-to-r from-blue-900 to-blue-700 text-white p-8 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-6 text-center">📊 Impacto dos Reconhecimentos</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">🌟</div>
+                            <h4 class="font-semibold mb-2">Visibilidade Nacional</h4>
+                            <p class="text-sm text-blue-200">Posicionamento da CAIXA como referência em inovação pública</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">🤝</div>
+                            <h4 class="font-semibold mb-2">Networking Estratégico</h4>
+                            <p class="text-sm text-blue-200">Ampliação da rede de parcerias e colaborações</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">💪</div>
+                            <h4 class="font-semibold mb-2">Motivação Interna</h4>
+                            <p class="text-sm text-blue-200">Fortalecimento da cultura de inovação entre os empregados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Próximos Passos Section -->
+        <section id="proximos-passos" class="mb-20">
+            <div class="section-divider mb-12"></div>
+            <h2 class="text-4xl font-bold text-blue-900 mb-8 text-center">Próximos Passos do Sandbox CAIXA</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-8 hover-lift mb-8">
+                <p class="text-lg text-gray-700 mb-8 text-center max-w-4xl mx-auto">
+                    Em 2025, o Sandbox CAIXA entra em uma nova fase de maturidade e expansão. Após os aprendizados dos ciclos anteriores, 
+                    o foco agora está em escalar a iniciativa, ampliando seu impacto em toda a organização.
+                </p>
+                
+                <div class="space-y-8">
+                    <!-- Sandbox Always On -->
+                    <div class="bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-blue-500 p-8 rounded-lg">
+                        <div class="flex items-start space-x-6">
+                            <div class="bg-blue-600 text-white p-4 rounded-full flex-shrink-0">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-blue-900 mb-4">1. Escala com o Sandbox CAIXA Always On</h3>
+                                <p class="text-gray-700 mb-4">
+                                    O modelo Sandbox CAIXA Always On está disponível para todas as unidades da CAIXA, permitindo que qualquer área 
+                                    proponha experimentos a qualquer momento. Essa abertura promove agilidade, autonomia e acelera a geração de 
+                                    soluções inovadoras diretamente conectadas aos desafios reais das equipes.
+                                </p>
+                                <div class="bg-blue-100 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-blue-900 mb-2">Principais Benefícios:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Eliminação de barreiras temporais para experimentação</li>
+                                        <li>• Maior autonomia das unidades gestoras</li>
+                                        <li>• Resposta mais rápida aos desafios emergentes</li>
+                                        <li>• Democratização do acesso à inovação</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sandy - Agente de IA -->
+                    <div class="bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-500 p-8 rounded-lg">
+                        <div class="flex items-start space-x-6">
+                            <div class="flex-shrink-0">
+                                <img src="https://i.postimg.cc/C16nh1q2/IMG-1040.png" alt="Sandy - Agente de IA" class="w-24 h-24 rounded-full object-cover border-4 border-purple-500 shadow-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-purple-900 mb-4">2. Sandy – Agente de IA do Sandbox CAIXA</h3>
+                                <p class="text-gray-700 mb-4">
+                                    A agente virtual Sandy foi desenvolvida para apoiar os experimentadores em todas as etapas da jornada. 
+                                    Ela responde dúvidas, orienta sobre o fluxo de experimentação e ajuda na elaboração de documentos como 
+                                    Lean Canvas e relatórios. Sandy é parte da estratégia de escalar o conhecimento e democratizar o acesso 
+                                    à inovação dentro da CAIXA.
+                                </p>
+                                <div class="bg-purple-100 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-purple-900 mb-2">Funcionalidades da Sandy:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Orientação sobre metodologias de experimentação</li>
+                                        <li>• Suporte na elaboração de documentos estruturados</li>
+                                        <li>• Esclarecimento de dúvidas sobre o processo</li>
+                                        <li>• Disponibilidade 24/7 para todos os experimentadores</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sandbox CAIXA NEXT -->
+                    <div class="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-8 rounded-lg">
+                        <div class="flex items-start space-x-6">
+                            <div class="bg-green-600 text-white p-4 rounded-full flex-shrink-0">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-green-900 mb-4">3. Edital Sandbox CAIXA NEXT</h3>
+                                <p class="text-gray-700 mb-4">
+                                    O próximo grande movimento será o lançamento do Edital Sandbox CAIXA NEXT, voltado à gestão de talentos. 
+                                    Aberto a todos os empregados da CAIXA, o edital convida os colaboradores a propor soluções inovadoras, 
+                                    com apoio técnico e visibilidade institucional. O objetivo é escalar o protagonismo e a criatividade 
+                                    dos empregados em todo o Brasil.
+                                </p>
+                                <div class="bg-green-100 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-green-900 mb-2">Características do NEXT:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Foco específico em gestão de talentos e pessoas</li>
+                                        <li>• Abertura para todos os empregados CAIXA do Brasil</li>
+                                        <li>• Apoio técnico especializado da GEINA</li>
+                                        <li>• Visibilidade institucional para os projetos selecionados</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visão de Futuro -->
+            <div class="bg-gradient-to-r from-blue-900 to-blue-700 text-white p-8 rounded-lg">
+                <h3 class="text-2xl font-semibold mb-6 text-center">🚀 Visão de Futuro</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="text-4xl mb-3">🌐</div>
+                        <h4 class="font-semibold mb-2">Expansão Nacional</h4>
+                        <p class="text-sm text-blue-200">Consolidação do Sandbox como ferramenta estratégica em todas as unidades da CAIXA</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl mb-3">🤖</div>
+                        <h4 class="font-semibold mb-2">Inteligência Artificial</h4>
+                        <p class="text-sm text-blue-200">Integração crescente de IA para apoiar e acelerar os processos de experimentação</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl mb-3">🎯</div>
+                        <h4 class="font-semibold mb-2">Impacto Social</h4>
+                        <p class="text-sm text-blue-200">Foco em soluções que gerem valor direto para a sociedade brasileira</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Créditos Section -->
+        <section id="creditos" class="mb-20">
+            <div class="section-divider mb-12"></div>
+            <h2 class="text-4xl font-bold text-blue-900 mb-8 text-center">Créditos e Agradecimentos</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-8 hover-lift mb-8">
+                <div class="prose prose-lg text-gray-700 max-w-none">
+                    <p class="text-lg leading-relaxed mb-6">
+                        Nesta edição do Sandbox Papers, não poderíamos deixar de expressar nossa profunda gratidão a todas as pessoas que fazem parte da jornada do Sandbox CAIXA. Este projeto é mais do que uma iniciativa de inovação — é um movimento coletivo que transforma ideias em impacto real.
+                    </p>
+                    
+                    <p class="leading-relaxed mb-6">
+                        Agradecemos especialmente à equipe da GEINA, que atua como coordenadora estratégica e facilitadora do ecossistema de experimentação. Seu trabalho incansável na remoção de barreiras, articulação institucional, produção de conhecimento e promoção da cultura de inovação é o alicerce que sustenta cada experimento realizado.
+                    </p>
+                    
+                    <p class="leading-relaxed mb-6">
+                        Nosso reconhecimento vai também aos intraempreendedores que se dedicaram aos ciclos de experimentação, aos gestores que apoiaram com visão estratégica, e aos parceiros que acreditaram no potencial transformador do Sandbox. Cada entrega, cada aprendizado e cada desafio superado é fruto da colaboração de um time que acredita no poder da inovação para transformar a CAIXA.
+                    </p>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 mb-6">
+                        <h4 class="text-xl font-semibold text-blue-900 mb-4">Agradecimento Especial</h4>
+                        <p class="text-gray-700 mb-4">Um agradecimento especial aos colegas que atuam diretamente na construção e evolução do Sandbox CAIXA:</p>
+                        
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="flex items-center">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                                Eduardo Augusto Correa Martinho
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                                Fernando Rodrigues Cividanes
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                                Halysson Oliveira Abreu
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                                Ricardo Moura Monteiro
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 p-6 rounded-lg text-center">
+                        <p class="text-lg font-medium text-yellow-800 mb-2">
+                            A todos que fazem parte dessa construção, nosso muito obrigado.
+                        </p>
+                        <p class="text-gray-700">
+                            O legado do Sandbox CAIXA é coletivo, e cada um de vocês é parte essencial dessa história.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex justify-center items-center space-x-6 mb-6">
+                <img src="https://i.postimg.cc/k5t9Lgys/IMG-1039.png" alt="Sandbox CAIXA Logo" class="h-8 w-auto">
+                <img src="https://storage.googleapis.com/idea-wp/apcapdobem/2022/10/6c4ea3d6-caixa_2cores_negativa.png" alt="CAIXA Logo" class="h-8 w-auto">
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Sandbox Papers</h3>
+            <p class="text-blue-200 mb-4">Da Hipótese à Escala - Edição 01, Agosto 2025</p>
+            <div class="mb-6">
+                <p class="text-blue-200 mb-2">Contato:</p>
+                <a href="mailto:sandbox@caixa.gov.br" class="text-yellow-400 hover:text-yellow-300 transition-colors font-medium">
+                    📧 sandbox@caixa.gov.br
+                </a>
+            </div>
+            <div class="mb-4">
+                <button onclick="downloadPDF()" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-semibold py-3 px-6 rounded-lg transition-colors inline-flex items-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Baixar Revista em PDF</span>
+                </button>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- PDF Generation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Highlight active section in navigation
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 200;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-yellow-600', 'font-bold');
+                link.classList.add('text-blue-900');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-blue-900');
+                    link.classList.add('text-yellow-600', 'font-bold');
+                }
+            });
+        });
+
+        // PDF Download Function
+        async function downloadPDF() {
+            const button = document.querySelector('button[onclick="downloadPDF()"]');
+            const originalText = button.innerHTML;
+            
+            // Show loading state
+            button.innerHTML = `
+                <svg class="w-5 h-5 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                </svg>
+                <span>Gerando PDF...</span>
+            `;
+            button.disabled = true;
+
+            try {
+                const { jsPDF } = window.jspdf;
+                const pdf = new jsPDF('p', 'mm', 'a4');
+                
+                // Get all sections to convert
+                const sections = [
+                    { element: document.querySelector('header'), title: 'Capa' },
+                    { element: document.querySelector('#editorial'), title: 'Editorial' },
+                    { element: document.querySelector('#visao-geral'), title: 'Visão Geral' },
+                    { element: document.querySelector('#historico'), title: 'Histórico' },
+                    { element: document.querySelector('#estrategia'), title: 'Estratégia 2025' },
+                    { element: document.querySelector('#experimentos'), title: 'Experimentos' },
+                    { element: document.querySelector('#parcerias'), title: 'Parcerias' },
+                    { element: document.querySelector('#eventos'), title: 'Eventos' },
+                    { element: document.querySelector('#premios'), title: 'Prêmios' },
+                    { element: document.querySelector('#proximos-passos'), title: 'Próximos Passos' },
+                    { element: document.querySelector('#creditos'), title: 'Créditos' }
+                ];
+
+                let isFirstPage = true;
+
+                for (let i = 0; i < sections.length; i++) {
+                    const section = sections[i];
+                    if (!section.element) continue;
+
+                    // Update loading message
+                    button.innerHTML = `
+                        <svg class="w-5 h-5 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                        </svg>
+                        <span>Processando ${section.title}... (${i + 1}/${sections.length})</span>
+                    `;
+
+                    // Create a temporary container for the section
+                    const tempContainer = document.createElement('div');
+                    tempContainer.style.width = '210mm';
+                    tempContainer.style.backgroundColor = 'white';
+                    tempContainer.style.padding = '20px';
+                    tempContainer.style.position = 'absolute';
+                    tempContainer.style.left = '-9999px';
+                    tempContainer.style.top = '0';
+                    
+                    // Clone the section
+                    const clonedSection = section.element.cloneNode(true);
+                    
+                    // Remove any fixed/sticky positioning
+                    const allElements = clonedSection.querySelectorAll('*');
+                    allElements.forEach(el => {
+                        const style = window.getComputedStyle(el);
+                        if (style.position === 'fixed' || style.position === 'sticky') {
+                            el.style.position = 'relative';
+                        }
+                    });
+                    
+                    tempContainer.appendChild(clonedSection);
+                    document.body.appendChild(tempContainer);
+
+                    try {
+                        // Convert to canvas
+                        const canvas = await html2canvas(tempContainer, {
+                            scale: 2,
+                            useCORS: true,
+                            allowTaint: true,
+                            backgroundColor: '#ffffff',
+                            width: tempContainer.scrollWidth,
+                            height: tempContainer.scrollHeight
+                        });
+
+                        // Calculate dimensions
+                        const imgWidth = 210; // A4 width in mm
+                        const pageHeight = 297; // A4 height in mm
+                        const imgHeight = (canvas.height * imgWidth) / canvas.width;
+                        
+                        // If this is not the first page, add a new page
+                        if (!isFirstPage) {
+                            pdf.addPage();
+                        }
+                        isFirstPage = false;
+
+                        // If the image is taller than one page, split it
+                        if (imgHeight > pageHeight - 20) { // 20mm margin
+                            const totalPages = Math.ceil(imgHeight / (pageHeight - 20));
+                            
+                            for (let page = 0; page < totalPages; page++) {
+                                if (page > 0) {
+                                    pdf.addPage();
+                                }
+                                
+                                const sourceY = (canvas.height / totalPages) * page;
+                                const sourceHeight = canvas.height / totalPages;
+                                
+                                // Create a temporary canvas for this page slice
+                                const pageCanvas = document.createElement('canvas');
+                                pageCanvas.width = canvas.width;
+                                pageCanvas.height = sourceHeight;
+                                const pageCtx = pageCanvas.getContext('2d');
+                                
+                                pageCtx.drawImage(
+                                    canvas,
+                                    0, sourceY, canvas.width, sourceHeight,
+                                    0, 0, canvas.width, sourceHeight
+                                );
+                                
+                                const pageImgData = pageCanvas.toDataURL('image/jpeg', 0.8);
+                                pdf.addImage(pageImgData, 'JPEG', 10, 10, imgWidth - 20, (pageHeight - 20));
+                            }
+                        } else {
+                            // Single page
+                            const imgData = canvas.toDataURL('image/jpeg', 0.8);
+                            pdf.addImage(imgData, 'JPEG', 10, 10, imgWidth - 20, imgHeight);
+                        }
+
+                    } catch (error) {
+                        console.error(`Error processing section ${section.title}:`, error);
+                    } finally {
+                        // Clean up
+                        document.body.removeChild(tempContainer);
+                    }
+
+                    // Small delay to prevent browser freezing
+                    await new Promise(resolve => setTimeout(resolve, 100));
+                }
+
+                // Save the PDF
+                pdf.save('Sandbox_Papers_Edicao_01_Agosto_2025.pdf');
+
+            } catch (error) {
+                console.error('Error generating PDF:', error);
+                alert('Erro ao gerar PDF. Tente novamente.');
+            } finally {
+                // Restore button
+                button.innerHTML = originalText;
+                button.disabled = false;
+            }
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'972372bde2282c68',t:'MTc1NTcwOTI0MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
